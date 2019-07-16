@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require './lib/pkg-query'
+require 'pkg-query'
 
 package = ARGV[0]
 raise 'Specify a package' unless package
