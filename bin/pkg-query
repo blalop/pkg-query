@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require './lib/pkg-query'
+
+package = ARGV[0]
+raise 'Specify a package' unless package
+
+distros = ['arch', 'debian', 'ubuntu']
+debian_releases = ['stable', 'testing', 'sid']
+ubuntu_releases = ['bionic', 'cosmic', 'disco', 'eoan']
+
+include PkgQuery
+puts "arch: #{arch(package)}"
+debian_releases.each { |release| puts "debian #{release}: #{debian(release, package)}" }
+ubuntu_releases.each { |release| puts "ubuntu #{release}: #{ubuntu(release, package)}" }
