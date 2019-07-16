@@ -7,9 +7,12 @@ raise 'Specify a package' unless package
 
 distros = ['arch', 'debian', 'ubuntu']
 debian_releases = ['stable', 'testing', 'sid']
+fedora_releases = ['Fedora 29', 'Fedora 30', 'Rawhide']
 ubuntu_releases = ['bionic', 'cosmic', 'disco', 'eoan']
 
 include PkgQuery
-puts "arch: #{arch(package)}"
-debian_releases.each { |release| puts "debian #{release}: #{debian(release, package)}" }
-ubuntu_releases.each { |release| puts "ubuntu #{release}: #{ubuntu(release, package)}" }
+puts package
+puts "Arch: #{arch(package)}"
+debian_releases.each { |release| puts "Debian #{release}: #{debian(release, package)}" }
+fedora_releases.each { |release| puts "Fedora #{release}: #{fedora(release, package)}" }
+ubuntu_releases.each { |release| puts "Ubuntu #{release}: #{ubuntu(release, package)}" }

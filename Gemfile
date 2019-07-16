@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'nokogiri'
+gem 'watir'
 
 group :development do
     gem 'rubocop'
