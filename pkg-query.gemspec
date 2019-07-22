@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
     spec.version       = PkgQuery::VERSION
     spec.authors       = ['Alejandro Blanco López']
     spec.email         = ['alexbl1996@gmail.com']
-    spec.summary       = 'A gem to query packages versions across distributions.'
-    spec.description   = 'A gem to query packages versions across distributions.'
+    spec.summary       = 'A gem to compare packages versions.'
+    spec.description   = 'A gem to query packages versions in several GNU/Linux distributions.'
     spec.homepage      = "https://github.com/blalop/pkg-query"
     spec.license       = 'MIT'
   
