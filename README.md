@@ -4,10 +4,14 @@ pkg-query is a simple web scraping tool that allows you to compare the version o
 
 ## Dependencies
 
-Another ruby packages are needed in order to run the script. You can use gem package manager to get them.
+[ChromeDriver](https://chromedriver.chromium.org/) is needed in order to query Fedora packages.
 
-· nokogiri
-· watir
+Additionally, some Ruby gems are needed in order to run the script:
+
+- nokogiri
+- watir
+
+If you're using bundler, just run `bundler install` and it will get the required gems automatically.
 
 ## Instalation
 
@@ -20,3 +24,4 @@ $ gem install pkg-query
 ```bash
 $ pkg-query package
 ```
+
